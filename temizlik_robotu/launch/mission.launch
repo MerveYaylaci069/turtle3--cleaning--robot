@@ -1,0 +1,25 @@
+<launch>
+
+  <!-- Harita -->
+  <arg name="map_file"
+       default="$(find temizlik_robotu)/maps/house_map.yaml"/>
+
+  <!-- Görev -->
+  <arg name="mission_file"
+       default="$(find temizlik_robotu)/config/mission.yaml"/>
+
+  <!-- Navigation -->
+  <include file="$(find temizlik_robotu)/launch/turtlebot3_navigation.launch">
+    <arg name="map_file" value="$(arg map_file)"/>
+  </include>
+
+  <!-- Mission Controller -->
+<node pkg="temizlik_robotu"
+      type="mission_controller.py"
+      name="mission_controller"
+      output="screen">
+    <param name="mission_file"
+           value="$(find temizlik_robotu)/config/mission.yaml"/>
+</node>
+
+</launch>

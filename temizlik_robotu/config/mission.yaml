@@ -1,0 +1,64 @@
+rooms:
+  - - id: 1
+  name: KORIDOR
+  entry_goal:
+    x: -1.20
+    y: 1.10
+    yaw: 3.14
+  cleaning_goals:
+    - {x: -1.47, y: 0.95, yaw: 2.94}
+    - {x: -1.87, y: 1.02, yaw: 2.95}
+    - {x: -2.26, y: 1.09, yaw: 2.95}
+
+
+  - - id: 2
+  name: BANYO
+  entry_goal:
+    x: 1.06
+    y: 2.76
+    yaw: 0.0
+  qr_expected: "ROOM=BANYO"
+  cleaning_goals:
+    - {x: 1.81, y: 4.52, yaw: 2.85}
+    - {x: 1.06, y: 4.77, yaw: -2.75}
+    - {x: 1.06, y: 4.54, yaw: -1.65}
+
+
+
+  - - id: 3
+  name: CALISMA_ODASI
+  entry_goal:
+    x: 5.90
+    y: -0.40
+    yaw: 0.0
+  cleaning_goals:
+    - {x: 5.87, y: -0.71, yaw: -1.78}
+    - {x: 5.76, y: -1.16, yaw: -1.79}
+    - {x: 5.66, y: -1.56, yaw: -1.79}
+
+
+  - - id: 4
+  name: MUTFAK
+  entry_goal:
+    x: 3.20
+    y: 4.60
+    yaw: 0.0
+  cleaning_goals:
+    - {x: 3.26, y: 4.38, yaw: -0.18}
+    - {x: 3.60, y: 4.13, yaw: -1.14}
+    - {x: 3.59, y: 3.79, yaw: -2.20}
+
+  - name: OTURMA_ODASI
+    entry_goal: {x: -5.95, y: 2.69, yaw: 0.0}
+    qr_expected: "ROOM=OTURMA_ODASI"
+    cleaning_goals:
+      - {x: -5.7, y: 2.7, yaw: 0.0}
+      - {x: -6.2, y: 2.5, yaw: 1.57}
+
+  - name: YATAK_ODASI
+    entry_goal: {x: -6.83, y: -2.85, yaw: 0.0}
+    qr_expected: "ROOM=YATAK_ODASI"
+    cleaning_goals:
+      - {x: -6.6, y: -2.8, yaw: 1.57}
+      - {x: -7.0, y: -3.0, yaw: 3.14}
+
